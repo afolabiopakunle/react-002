@@ -12,6 +12,10 @@ function Todo(props) {
     setModalState(false)
   }
 
+  function confirmHandler() {
+    setModalState(false)
+  }
+
   return (
     <div>
       <div className="card">
@@ -22,7 +26,7 @@ function Todo(props) {
           </button>
         </div>
       </div>
-      { isModalOpen && <Modal /> }
+      { isModalOpen && <Modal onCancel={cancelHandler} onConfirm={confirmHandler}/> }
       { isModalOpen && <Backdrop onCancel={cancelHandler}/> }
     </div>
   );
