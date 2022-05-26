@@ -9,6 +9,8 @@ export default function App() {
     <div>
       <h1 className='title'>Todo App</h1>
       <Todo title='Learn React'/>
+      <Todo title='Develop react'/>
+      <Todo title='Update resume'/>
     </div>
   );
 }
