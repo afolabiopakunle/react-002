@@ -1,7 +1,7 @@
 import React from 'react';
 
 function Backdrop() {
-  return ()
+  return (<div className='backdrop' />)
 }
 
 export default Backdrop;
